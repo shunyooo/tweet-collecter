@@ -7,11 +7,3 @@ services:
     command: python crawl_stream.py
     working_dir: /app
     # restart: always
-  jupyterlab:
-    build: ./env/jupyterlab
-    ports:
-      - 8889:8888
-    volumes:
-      - ./:/root/user/jupyterlab
-    working_dir: /root/user/jupyterlab
-    command: sh /run.sh

@@ -8,3 +8,5 @@ coala-utils~=0.5.0
 lxml
 requests
 tweepy
+pykakasi
+git+https://github.com/shunyooo/GetOldTweets3
