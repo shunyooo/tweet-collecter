@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  tweet-crawler:
+    build: ./env/query_crawler
+    ports:
+      - 8888:8888
+    volumes:
+      - ./:/app
+    environment:
+        - GOOGLE_APPLICATION_CREDENTIALS=/app/config/gcp-service-account.json
+    # restart: always
