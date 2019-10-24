@@ -1,17 +1,18 @@
 # Tweet Collector
 
-## Feature
+ツイートを色々な方法で収集するもの.
 
-- Dockerでの起動
-  - 起動のみで取得開始
-- 取得
-  - APIからの取得
-    - Streaming API
-  - 検索ベースの取得
-- MySQLへの保存
-- 可視化（Future Work）
-  - 頻度分析, ワードクラウド
-  - 感情/評判分析
+
+
+## Crawler List
+
+- [**api_crawler**](./api_crawler)
+  - API経由のクローラ
+  - StreamingAPIでリアルタイムなツイートを取得
+- [**query_crawler**](./query_crawler)
+  - エミュレートベースのクローラ
+  - 取得できるtweet件数に制限がない
+  - クエリ検索してツイートを取得する
 
 
 
